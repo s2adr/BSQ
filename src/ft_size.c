@@ -6,26 +6,26 @@
 /*   By: saidriss <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 12:02:12 by saidriss          #+#    #+#             */
-/*   Updated: 2024/09/30 12:02:13 by saidriss         ###   ########.fr       */
+/*   Updated: 2024/09/30 13:33:12 by saidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	x_size(char **matrix)
+int	x_size(char **row)
 {
 	int	size;
 
 	size = 0;
-	while (matrix[size])
+	while (row[size])
 		size++;
 	return (size);
 }
 
-int	y_size(char **matrix)
+int	y_size(char **col)
 {
 	int	size;
 
 	size = 0;
-	while (matrix[0][size])
+	while (col[0][size])
 		size++;
 	return (size);
 }
