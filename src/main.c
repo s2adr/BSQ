@@ -6,7 +6,7 @@
 /*   By: saidriss <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 11:59:42 by saidriss          #+#    #+#             */
-/*   Updated: 2024/09/30 11:59:44 by saidriss         ###   ########.fr       */
+/*   Updated: 2024/09/30 12:39:46 by saidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,23 +28,21 @@ void	ft_exit(void)
 	exit(1);
 }
 
-int	main(int argc, char **argv)
+int	main(int ac, char **av)
 {
 	int	i;
 
 	i = 0;
-	argc--;
-	argv++;
-	while (i < argc)
+	ac--;
+	av++;
+	while (i < ac)
 	{
-		ft_init(argc, argv[i]);
-		if (i < argc - 1)
+		ft_init(ac, av[i]);
+		if (i < ac - 1)
 			ft_putchar('\n');
 		i++;
 	}
-	if (!argc)
-	{
-		ft_init(argc, argv[i]);
-	}
+	if (!ac)
+		ft_init(ac, av[i]);
 	return (0);
 }
