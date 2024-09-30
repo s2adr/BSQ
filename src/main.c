@@ -6,7 +6,7 @@
 /*   By: saidriss <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 11:59:42 by saidriss          #+#    #+#             */
-/*   Updated: 2024/09/30 13:23:40 by saidriss         ###   ########.fr       */
+/*   Updated: 2024/09/30 13:24:10 by saidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_error(void)
 void	ft_error_map(void)
 {
 	write (2, "map error\n", 10);
-	exit(1)
+	exit(1);
 }
 
 int	main(int ac, char **av)
