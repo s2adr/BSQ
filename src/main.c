@@ -6,7 +6,7 @@
 /*   By: saidriss <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 11:59:42 by saidriss          #+#    #+#             */
-/*   Updated: 2024/09/30 13:24:10 by saidriss         ###   ########.fr       */
+/*   Updated: 2024/10/02 11:45:53 by saidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,11 @@ int	main(int ac, char **av)
 	int	i;
 
 	i = 0;
+	if (ac == 1)
+	{
+		ft_init(ac, "map");
+		return (0);
+	}
 	ac--;
 	av++;
 	while (i < ac)
