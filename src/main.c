@@ -6,7 +6,7 @@
 /*   By: saidriss <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 11:59:42 by saidriss          #+#    #+#             */
-/*   Updated: 2024/10/02 11:45:53 by saidriss         ###   ########.fr       */
+/*   Updated: 2024/10/02 17:43:28 by saidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,16 +34,17 @@ int	main(int ac, char **av)
 		ft_init(ac, "map");
 		return (0);
 	}
-	ac--;
-	av++;
-	while (i < ac)
+	else
 	{
-		ft_init(ac, av[i]);
-		if (i < ac - 1)
-			ft_putchar('\n');
-		i++;
+		ac--;
+		av++;
+		while (i < ac)
+		{
+			ft_init(ac, av[i]);
+			if (i < ac - 1)
+				ft_putchar('\n');
+			i++;
+		}
 	}
-	if (!ac)
-		ft_init(ac, av[i]);
 	return (0);
 }
